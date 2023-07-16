@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
 
     }
 
@@ -85,10 +87,35 @@ public class Main {
         int monthInYear = year * 12;
         float sum = 15000;
         float rate = 7 / 100f;
-        for (int month = 1; month < monthInYear; month++) {
+        for (int month = 1; month <= monthInYear; month++) {
             sum += sum * rate;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
+
+            }
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int friday = 3;
+        int daysInMonth = 31;
+
+        for (; friday <= daysInMonth; friday = friday + 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int cometComesYear = 79;
+        int now = 2023;
+        int last = now - 200;
+        int future = now + 100;
+
+        for (int year = 0; year < future; year += cometComesYear) {
+                        if (year > last) {
+                System.out.println(year);
 
             }
         }
